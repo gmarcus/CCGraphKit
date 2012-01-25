@@ -14,8 +14,11 @@
 		2190CFEC14CD0285007A4160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190CFEB14CD0285007A4160 /* main.m */; };
 		2190CFF014CD0285007A4160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190CFEF14CD0285007A4160 /* AppDelegate.m */; };
 		2190CFF314CD0285007A4160 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2190CFF114CD0285007A4160 /* MainStoryboard.storyboard */; };
-		2190CFF614CD0285007A4160 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190CFF514CD0285007A4160 /* MasterViewController.m */; };
-		2190CFF914CD0285007A4160 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190CFF814CD0285007A4160 /* DetailViewController.m */; };
+		2190D00814CD02E6007A4160 /* GraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190D00214CD02E6007A4160 /* GraphsViewController.m */; };
+		2190D00914CD02E6007A4160 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190D00414CD02E6007A4160 /* GraphView.m */; };
+		2190D00A14CD02E6007A4160 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190D00614CD02E6007A4160 /* GraphViewController.m */; };
+		2190D00F14CD1A14007A4160 /* CaughtPhrase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190D00E14CD1A14007A4160 /* CaughtPhrase.m */; };
+		2190D01114CD1C6C007A4160 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2190D01014CD1C6C007A4160 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,17 +26,23 @@
 		2190CFDF14CD0285007A4160 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2190CFE114CD0285007A4160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2190CFE314CD0285007A4160 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2190CFE714CD0285007A4160 /* CGThreaded-Info.plist */ = {isa = PBXFileReference; path = "CGThreaded-Info.plist"; sourceTree = "<group>"; };
+		2190CFE714CD0285007A4160 /* CGThreaded-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGThreaded-Info.plist"; sourceTree = "<group>"; };
 		2190CFE914CD0285007A4160 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2190CFEB14CD0285007A4160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2190CFED14CD0285007A4160 /* CGThreaded-Prefix.pch */ = {isa = PBXFileReference; path = "CGThreaded-Prefix.pch"; sourceTree = "<group>"; };
-		2190CFEE14CD0285007A4160 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		2190CFED14CD0285007A4160 /* CGThreaded-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGThreaded-Prefix.pch"; sourceTree = "<group>"; };
+		2190CFEE14CD0285007A4160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2190CFEF14CD0285007A4160 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2190CFF214CD0285007A4160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		2190CFF414CD0285007A4160 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
-		2190CFF514CD0285007A4160 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		2190CFF714CD0285007A4160 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
-		2190CFF814CD0285007A4160 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2190D00114CD02E6007A4160 /* GraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphsViewController.h; sourceTree = "<group>"; };
+		2190D00214CD02E6007A4160 /* GraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphsViewController.m; sourceTree = "<group>"; };
+		2190D00314CD02E6007A4160 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		2190D00414CD02E6007A4160 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		2190D00514CD02E6007A4160 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		2190D00614CD02E6007A4160 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
+		2190D00B14CD0B2E007A4160 /* AFDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFDefines.h; sourceTree = "<group>"; };
+		2190D00D14CD1A14007A4160 /* CaughtPhrase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaughtPhrase.h; sourceTree = "<group>"; };
+		2190D00E14CD1A14007A4160 /* CaughtPhrase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaughtPhrase.m; sourceTree = "<group>"; };
+		2190D01014CD1C6C007A4160 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2190D01114CD1C6C007A4160 /* CoreText.framework in Frameworks */,
 				2190CFE014CD0285007A4160 /* UIKit.framework in Frameworks */,
 				2190CFE214CD0285007A4160 /* Foundation.framework in Frameworks */,
 				2190CFE414CD0285007A4160 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +63,7 @@
 		2190CFD014CD0285007A4160 = {
 			isa = PBXGroup;
 			children = (
+				2190D01014CD1C6C007A4160 /* CoreText.framework */,
 				2190CFE514CD0285007A4160 /* CGThreaded */,
 				2190CFDE14CD0285007A4160 /* Frameworks */,
 				2190CFDC14CD0285007A4160 /* Products */,
@@ -82,11 +93,10 @@
 			children = (
 				2190CFEE14CD0285007A4160 /* AppDelegate.h */,
 				2190CFEF14CD0285007A4160 /* AppDelegate.m */,
+				2190D00B14CD0B2E007A4160 /* AFDefines.h */,
 				2190CFF114CD0285007A4160 /* MainStoryboard.storyboard */,
-				2190CFF414CD0285007A4160 /* MasterViewController.h */,
-				2190CFF514CD0285007A4160 /* MasterViewController.m */,
-				2190CFF714CD0285007A4160 /* DetailViewController.h */,
-				2190CFF814CD0285007A4160 /* DetailViewController.m */,
+				2190D00C14CD0BBA007A4160 /* Model */,
+				2190CFFF14CD02C8007A4160 /* Graph */,
 				2190CFE614CD0285007A4160 /* Supporting Files */,
 			);
 			path = CGThreaded;
@@ -101,6 +111,28 @@
 				2190CFED14CD0285007A4160 /* CGThreaded-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2190CFFF14CD02C8007A4160 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2190D00114CD02E6007A4160 /* GraphsViewController.h */,
+				2190D00214CD02E6007A4160 /* GraphsViewController.m */,
+				2190D00514CD02E6007A4160 /* GraphViewController.h */,
+				2190D00614CD02E6007A4160 /* GraphViewController.m */,
+				2190D00314CD02E6007A4160 /* GraphView.h */,
+				2190D00414CD02E6007A4160 /* GraphView.m */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		2190D00C14CD0BBA007A4160 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2190D00D14CD1A14007A4160 /* CaughtPhrase.h */,
+				2190D00E14CD1A14007A4160 /* CaughtPhrase.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +200,10 @@
 			files = (
 				2190CFEC14CD0285007A4160 /* main.m in Sources */,
 				2190CFF014CD0285007A4160 /* AppDelegate.m in Sources */,
-				2190CFF614CD0285007A4160 /* MasterViewController.m in Sources */,
-				2190CFF914CD0285007A4160 /* DetailViewController.m in Sources */,
+				2190D00814CD02E6007A4160 /* GraphsViewController.m in Sources */,
+				2190D00914CD02E6007A4160 /* GraphView.m in Sources */,
+				2190D00A14CD02E6007A4160 /* GraphViewController.m in Sources */,
+				2190D00F14CD1A14007A4160 /* CaughtPhrase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
